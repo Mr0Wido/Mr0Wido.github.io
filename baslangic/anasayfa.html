@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+</style>
+
+<title>FRSEC</title>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="../logo/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../logo/favicon.ico" type="image/x-icon">
+
+<!-- CSS Kütüphanesi-->
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="../css/Deneme-1.css"/>
+
+<!-- javascript Kütüphanesi
+<script id="applicationScript" type="text/javascript" src="js/Deneme-1.js"></script>
+-->
+
+</head>
+<body onload="initClock()">
+
+<div id="Web_1920__1">
+	<!-- Background video -->
+	<video autoplay muted loop id="myVideo">
+		 <source src="../video/Video-7.mp4" type="video/mp4">
+	</video>
+
+  <!-- Başlık -->
+	<div class="baslik-div animate__animated animate__fadeIn">
+		<h1 class="baslik">FRSEC</h1>
+	</div>
+
+  <!-- Başlık Sloganı -->
+	<div class="slogan animate__animated animate__fadeIn">
+		<div id="app4">
+		</div>
+	</div>
+
+	<!-- Kişisel Sekmesi -->
+	<div class="kisisel-div animate__animated animate__fadeInRightBig">
+		<svg class="kisisel ">
+			<rect id="kisisel" rx="0" ry="0" x="0" y="0" width="306" height="250">
+				<h1 id="kisisel-1"></h1>
+				<div id="app1" class="kisisel-yazi"></div>
+			</rect>
+		</svg>
+	</div>
+
+	<!-- Radyo Sekmesi -->
+	<div class="radyo-div animate__animated animate__fadeInRightBig">
+		<svg class="radyo">
+			<rect id="radyo" rx="0" ry="0" x="0" y="0" width="306" height="250">
+				<h1 id="radyo-1"></h1>
+				<div id="app2" class="radyo-yazi"></div>
+				<div class="notes">
+					<textarea id="notes" placeholder="Dostum Notlarını Buraya Yaz!"></textarea>
+					<button class="button-copy" onclick="copyToClipboard('#notes')"><i class="far fa-copy"></i></button>
+				</div>
+			</rect>
+		</svg>
+	</div>
+
+  <!-- Ana Bilgi Sekmesi -->
+	<div class="ana-bilgi-div animate__animated animate__fadeInUpBig">
+		<svg class="ana-bilgi">
+			<rect id="ana-bilgi" rx="0" ry="0" x="0" y="0" width="880" height="712">
+				<h1 id="ana-bilgi-1"></h1>
+				<div class="ana-yazi" id="app">
+					<h1 class="anabilgilan">
+						Öncelikle Frsec websitesine hoşgeldiniz. İsmim, Furkan ben bu siteyi portföy amaçlı oluşturmuş bulunmaktayım ancak tek amacı bu değildir ilerleyen zamanlarda hem portföy bilgileri hemde kendi deneyimlerimi, kaynaklarımı ve sahip olduğum bilgileri aktarmaya çalışacağım bir websitesidir. Bu site tamamen bilgilendirme amaçldır. Bu sitede anlatılan herhangi bir aracın veya bilginin kullanımı tamamen size aittir.
+					</h1>
+				</div>
+				<div class="portfolio-bilgi-div" id="portfolioBilgi" style="display:none;">
+						<h1 class="port-yazisi">ComingSoon...</h1>
+				</div>
+				<!-- Konu1 -->
+				<div class="konu1-yazisi" id="konu1yazi" style="display:none;">
+					<div class="konu1-baslik-background">
+						<h1 id="konu1-baslik">Temel Bilgiler</h1>
+					</div>
+					<div class="konu1-yazi-background">
+						<div id="konu1-yazi">
+							<p>Bug bounty için temel olarak öğrenilmesi gereken şeylerden bazıları şunlardır;
+								<br>
+								<br>
+								<ul type="square" style="font-size:14px;">
+									<li>HTTP Temelleri</li>
+									<li>Ağ Temelleri</li>
+									<li>Programlama Temelleri</li>
+									<li>Otomasyon</li>
+								</ul>
+								<br>
+								Yukarıda özellikle temel olarak dedim çünkü bazı şeylerin detayına girmeye gerek olmadan da bu işi yapabilirsiniz. Örneğin, otamasyon için kulnıcağınız dilleri çok iyi bilmenize gerek yok ve ya programlama temelerinin herşeyine hakim olmanıza gerek yok . Http ve Ağ temelleri ise daha farklı çünkü kesinlikle bilmeniz gerekn şeyler.
+								<br>
+								<br>
+								<ul type="square" style="font-size:16px;">
+									<li><b>HTTP Temelleri</b></li>
+								</ul>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bir uygulamanın ne ve nasıl çalıştığını öğrenebilmek için, onunla nasıl iletişim kurduğunuzu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;anlayabilmeniz gerekir. Bu bölüm, HTTP temellerini anlatan kaynaklardır.
+							</p>
+							<ul style="margin-left:50px;">
+								<li><a href="https://youtu.be/DWBUQiaN5ZM" style="text-decoration:none;"><b>The Web In Depth</b></a></li>
+							</ul>
+							<p style="margin-left:70px;">Hackerone'da Bulunan HTTP eğitim Videosu: <a href="https://youtu.be/DWBUQiaN5ZM" style="color:red;">https://youtu.be/DWBUQiaN5ZM</a></p>
+
+							<ul style="margin-left:50px;">
+								<li><a href="https://www.tutorialspoint.com/http/index.htm" style="text-decoration:none;"><b>HTTP Tutorial</b></a></li>
+							</ul>
+							<p style="margin-left:70px;">TutorialsPoint HTTP Eğitimi: <a href="https://www.tutorialspoint.com/http/index.htm" style="color:red;">https://www.tutorialspoint.com/http/index.htm</a></p>
+
+							<ul style="margin-left:50px;">
+								<li><a href="https://www.w3schools.com/whatis/whatis_http.asp" style="text-decoration:none;"><b>What is HTTP?</b></a></li>
+							</ul>
+
+							<p style="margin-left:70px;">W3School'un kısa HTTP Eğitimi: <a href="https://www.w3schools.com/whatis/whatis_http.asp" style="color:red;">https://www.w3schools.com/whatis/whatis_http.asp</a></p>
+							<br>
+							<br>
+							<ul type="square" style="font-size:16px;">
+								<li><b>Ağ Temelleri</b></li>
+							</ul>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recon-Keşif, Bug Bounty içerisinde kullanılan yaygın bir terminolojidir. Recon-Keşif araçları, açık bağlantı noktaları için bir dizi IP'yi taramak veya alt etki alanları bulmak için kullanılır. Ancak önce bunların neden önemli olduğunu ve nasıl çalıştıklarını anlamalısınız. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+							<ul style="margin-left:50px;">
+								<li><a href="https://www.youtube.com/playlist?list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8" style="text-decoration:none;"><b>Network Fundamentals</b></a></li>
+							</ul>
+							<p style="margin-left:70px;">Yaklaşık 400 dk'lık büyük Bir Eğitim: <a href="https://www.youtube.com/playlist?list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8" style="color:red;">https://www.youtube.com/playlist?list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8</a></p>
+
+							<ul style="margin-left:50px;">
+								<li><a href="https://commotionwireless.net/docs/cck/networking/learn-networking-basics/" style="text-decoration:none;"><b>Learn Networking Basics</b></a></li>
+							</ul>
+							<p style="margin-left:70px;">Basit ve Kısa Network Eğitimi: <a href="https://commotionwireless.net/docs/cck/networking/learn-networking-basics/" style="color:red;">https://commotionwireless.net/docs/cck/networking/learn-networking-basics/</a></p>
+
+							<ul style="margin-left:50px;">
+								<li><a href="https://www.utilizewindows.com/list-of-common-network-port-numbers/" style="text-decoration:none;"><b>What are Ports?</b></a></li>
+							</ul>
+							<p style="margin-left:70px;">Port Numaraları Nedir ve Nelerdir?: <a href="https://www.utilizewindows.com/list-of-common-network-port-numbers/" style="color:red;">https://www.utilizewindows.com/list-of-common-network-port-numbers/</a></p>
+
+							<ul style="margin-left:50px;">
+								<li><a href="http://www.penguintutor.com/linux/basic-network-reference" style="text-decoration:none;"><b>Basic Network Reference</b></a></li>
+							</ul>
+							<p style="margin-left:70px;">Basit Network Reference Klavuzu: <a href="http://www.penguintutor.com/linux/basic-network-reference" style="color:red;">http://www.penguintutor.com/linux/basic-network-reference</a></p>
+
+							<ul style="margin-left:50px;">
+								<li><a href="https://code.tutsplus.com/tutorials/an-introduction-to-learning-and-using-dns-records--cms-24704" style="text-decoration:none;"><b>What is DNS?</b></a></li>
+							</ul>
+							<p style="margin-left:70px;">DNS Kayıtlarını Öğrenmeye ve Kullanmaya Giriş: <a href="https://code.tutsplus.com/tutorials/an-introduction-to-learning-and-using-dns-records--cms-24704" style="color:red;">https://code.tutsplus.com/tutorials/an-introduction-to-learning-and-using-dns-records--cms-24704</a></p>
+							<br>
+							<br>
+
+						</div>
+					</div>
+				</div>
+				<!-- Konu2 -->
+				<div class="konu2-yazisi" id="konu2yazi" style="display:none;">
+					<div class="konu2-baslik-background">
+						<h1 id="konu2-baslik">KONU 2</h1>
+					</div>
+					<div class="konu2-yazi-background">
+						<p id="konu2-yazi">Konu 2'ye hoşgeldiniz.</p>
+					</div>
+				</div>
+				<!-- Konu3 -->
+				<div class="konu3-yazisi" id="konu3yazi" style="display:none;">
+					<div class="konu3-baslik-background">
+						<h1 id="konu3-baslik">KONU 3</h1>
+					</div>
+					<div class="konu3-yazi-background">
+						<p id="konu3-yazi">Konu 3'e hoşgeldiniz.</p>
+					</div>
+				</div>
+				<!-- Konu4 -->
+				<div class="konu4-yazisi" id="konu4yazi" style="display:none;">
+					<div class="konu4-baslik-background">
+						<h1 id="konu4-baslik">KONU 4</h1>
+					</div>
+					<div class="konu4-yazi-background">
+						<p id="konu4-yazi">Konu 4'e hoşgeldiniz.</p>
+					</div>
+				</div>
+				<!-- Konu5 -->
+				<div class="konu5-yazisi" id="konu5yazi" style="display:none;">
+					<div class="konu5-baslik-background">
+						<h1 id="konu5-baslik">KONU 5</h1>
+					</div>
+					<div class="konu5-yazi-background">
+						<p id="konu5-yazi">Konu 5'e hoşgeldiniz.</p>
+					</div>
+				</div>
+				<!-- Konu6 -->
+				<div class="konu6-yazisi" id="konu6yazi" style="display:none;">
+					<div class="konu6-baslik-background">
+						<h1 id="konu6-baslik">KONU 6</h1>
+					</div>
+					<div class="konu6-yazi-background">
+						<p id="konu6-yazi">Konu 6'ya hoşgeldiniz.</p>
+					</div>
+				</div>
+				<!-- Konu7 -->
+				<div class="konu7-yazisi" id="konu7yazi" style="display:none;">
+					<div class="konu7-baslik-background">
+						<h1 id="konu7-baslik">KONU 7</h1>
+					</div>
+					<div class="konu7-yazi-background">
+						<p id="konu7-yazi">Konu 7'ye hoşgeldiniz.</p>
+					</div>
+				</div>
+				<!-- Konu8 -->
+				<div class="konu8-yazisi" id="konu8yazi" style="display:none;">
+					<div class="konu8-baslik-background">
+						<h1 id="konu8-baslik">KONU 8</h1>
+					</div>
+					<div class="konu8-yazi-background">
+						<p id="konu8-yazi">Konu 8'e hoşgeldiniz.</p>
+					</div>
+				</div>
+				<!-- Konu9 -->
+				<div class="konu9-yazisi" id="konu9yazi" style="display:none;">
+					<div class="konu9-baslik-background">
+						<h1 id="konu9-baslik">KONU 9</h1>
+					</div>
+					<div class="konu9-yazi-background">
+						<p id="konu9-yazi">Konu 9'a hoşgeldiniz.</p>
+					</div>
+				</div>
+				<!-- Konu10 -->
+				<div class="konu10-yazisi" id="konu10yazi" style="display:none;">
+					<div class="konu10-baslik-background">
+						<h1 id="konu10-baslik">KONU 10</h1>
+					</div>
+					<div class="konu10-yazi-background">
+						<p id="konu10-yazi">Konu 10'a hoşgeldiniz.</p>
+					</div>
+				</div>
+				<!-- Disclaimer -->
+				<div class="disclaimer-yazisi" id="disclaimeryazi" style="display:none;">
+					<div class="disclaimer-baslik-background">
+						<h1 id="disclaimer-baslik">DISCLAIMER</h1>
+					</div>
+					<div class="disclaimer-yazi-background">
+						<p id="disclaimer-yazi">Daha fazla bilgiye ihtiyacınız varsa veya sitemizin sorumluluk reddi ile ilgili herhangi bir sorunuz varsa, lütfen
+																		cysechunting@protonmail.com adresinden e-posta ile bizimle iletişime geçmekten çekinmeyin.
+																		<br>
+																		<br>
+																		Bu web sitesinde orijinal içerik sağlamaya çalışacağız. Bu web sitesindeki tüm bilgiler iyi niyetle ve yalnızca genel bilgi amaçlı yayınlanmaktadır. https://mr0wido.github.io bu bilgilerin eksiksizliği, güvenilirliği ve doğruluğu konusunda herhangi bir garanti vermez. Bu web sitesinde (https://mr0wido.github.io) bulduğunuz bilgilerle yapacağınız herhangi bir işlem kesinlikle size aittir.
+																		<br>
+																		<br>
+																		<b>ONAY</b>
+																		<br>
+																		Web sitemizi kullanarak, sorumluluk reddimizi ve şartlarını kabul etmiş olursunuz.
+																		</p>
+					</div>
+				</div>
+				<!-- Privacy Policy -->
+				<div class="privacy-yazisi" id="privacyyazi" style="display:none;">
+					<div class="privacy-baslik-background">
+						<h1 id="privacy-baslik">PRIVACY POLICY</h1>
+					</div>
+					<div class="privacy-yazi-background">
+						<p id="privacy-yazi">Gizlilik Politikası
+																Bu Gizlilik Politikası, https://mr0wido.github.io web sitesinin (Site) kullanıcılarından (her biri, bir Kullanıcı) toplanan bilgileri https://mr0wido.github.io toplama, kullanma, koruma ve açıklama şeklini yönetir. Bu gizlilik politikası Site, https://mr0wido.github.io tarafından sunulan tüm ürün ve hizmetler için geçerlidir.
+																<br>
+																https://mr0wido.github.io web sitesi hiç bir kullanıcının verisini tutabilecek bir yazılım kullanmadığı için hiçbir şekilde 3. taraf yazılım veya çerez bilgileri tutmamaktadır.
+																<br>
+																<br>
+																ONAY
+																<br>
+																Sitemizi kullanarak, gizlilik politikamızı kabul etmiş olursunuz.
+																</p>
+					</div>
+				</div>
+				<!-- Portfolio-->
+				<div class="portfolio-yazisi" id="portfolioyazi" style="display:none;">
+					<div class="portfolio-baslik-background">
+						<h1 id="portfolio-baslik">PORTFOLIO</h1>
+					</div>
+					<div class="portfolio-yazi-background">
+						<p id="portfolio-yazi">Coming Soon</p>
+					</div>
+				</div>
+				<!-- Kategoriler -->
+				<div class="kategoriler-yazisi" id="kategorileryazi" style="display:none;">
+					<div class="kategoriler-baslik-background">
+						<h1 id="kategoriler-baslik">KATEGORİLER</h1>
+					</div>
+					<div class="kategoriler-yazi-background">
+						<div class="kategoriler-yazi">
+							<h3>Kategoriler</h3>
+							<ul type"square" >
+								<li><button type="button" class="one" id="one">TEMEL BİLGİLER</button></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a> </li>
+								<li><a href="">4</a> </li>
+								<li><a href="">5</a> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Konu 1 Page 2 -->
+				<div class="page2-yazisi" id="page2yazi" style="display:none;">
+					<div class="page2-baslik-background">
+						<h1 id="page2-baslik">Temel Bilgiler</h1>
+					</div>
+					<div class="page2-yazi-background">
+						<div class="page2-yazi">
+							<p style="font-size:18px;"><b>Programlama Temelleri</b></p>
+							<ul type="square" style="font-size:15px;">
+							<li>eklenicek.</li>
+							</ul>
+							<br>
+							<br>
+							<p style="font-size:18px;"><b>Otomasyon</b></p>
+							<ul type="square" style="font-size:15px;">
+							<li>eklenicek.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</rect>
+		</svg>
+	</div>
+
+
+	<button type="button" class="page1" id="page1button">Page 1</button>
+	<button type="button" class="page2" id="page2button">Page 2</button>
+	<button type="button" class="page3" id="page3button">Page 1</button>
+	<!-- <button type="button" class="page4" id="page4button">Page 1</button>
+	<button type="button" class="page5" id="page5button">Page 1</button>
+	<button type="button" class="page6" id="page6button">Page 1</button>
+	<button type="button" class="page7" id="page7button">Page 1</button>
+	<button type="button" class="page8" id="page8button">Page 1</button>
+	<button type="button" class="page9" id="page9button">Page 1</button>
+	<button type="button" class="page10" id="page10button">Page 1</button>
+	<button type="button" class="page11" id="page11button">Page 1</button>
+	<button type="button" class="page12" id="page12button">Page 1</button>
+	<button type="button" class="page13" id="page13button">Page 1</button>
+	<button type="button" class="page14" id="page14button">Page 1</button>
+	<button type="button" class="page15" id="page15button">Page 1</button> -->
+
+  <!-- Ana Bilgi Devam Butonu -->
+<button class="button" id="delete"> DEVAM ET </button>
+
+	<!-- Ana Bilgi Geri Butonu -->
+	<div class="button-anim-geri animate__animated animate__fadeInUpBig">
+			  <button type="button" class="button-geri" id="geri">Anasayfa</button>
+	</div>
+
+  <!-- Sosyal Medya Sekmesi-->
+	<div class="hakkimda-div animate__animated animate__fadeInRightBig">
+		<svg class="hakkimda" viewBox="0 0 306 150">
+			<path id="hakkimda" d="M 0 0 L 306 0 L 306 150 L 0 150 L 0 0 Z">
+				<h1 id="Info"></h1>
+			</path>
+		</svg>
+	</div>
+
+  <!-- Hakkımda Sekmesi -->
+	<div class="media-div animate__animated animate__fadeInLeftBig">
+		<svg class="media">
+			<rect id="media" rx="0" ry="0" x="0" y="0" width="300" height="150">
+				<h1 id="sosil"></h1>
+				<div class="hakkimda1nela">
+					<button type="button" class="hakkimda1" id="hakkimda1">DISCLAIMER</button>
+				</div>
+				<div class="hakkimda2nela">
+					<button type="button" class="hakkimda2" id="hakkimda2">PRIVACY POLICY</button>
+				</div>
+			</rect>
+		</svg>
+	</div>
+
+  <!-- ADS Sekmesi -->
+	<div class="menu-div animate__animated animate__fadeInLeftBig">
+		<svg class="menu">
+			<rect id="menu" rx="0" ry="0" x="0" y="0" width="300" height="525">
+				<h1 id="menu-1"></h1>
+				<div id="app3" class="menu-yazi"></div>
+			</rect>
+		</svg>
+	</div>
+	<div class="konu-div animate__animated animate__fadeInLeftBig">
+		<h1 id="konu-baslik">KONULAR</h1>
+	</div>
+	<div class="konular animate__animated animate__fadeInLeftBig">
+		<div class="konu">
+			<button type="button" class="konu-1" id="konu1button">Temel Bilgiler</button>
+		</div>
+		<hr class="konu-line">
+		<div class="konu">
+			<button type="button" class="konu-2" id="konu2button">KONU 2</button>
+		</div>
+		<hr class="konu-line">
+		<div class="konu">
+			<button type="button" class="konu-3" id="konu3button">KONU 3</button>
+		</div>
+		<hr class="konu-line">
+		<div class="konu">
+			<button type="button" class="konu-4" id="konu4button">KONU 4</button>
+		</div>
+		<hr class="konu-line">
+		<div class="konu">
+			<button type="button" class="konu-5" id="konu5button">KONU 5</button>
+		</div>
+		<hr class="konu-line">
+		<div class="konu">
+			<button type="button" class="konu-6" id="konu6button">KONU 6</button>
+		</div>
+		<hr class="konu-line">
+		<div class="konu">
+			<button type="button" class="konu-7" id="konu7button">KONU 7</button>
+		</div>
+		<hr class="konu-line">
+		<div class="konu">
+			<button type="button" class="konu-8" id="konu8button">KONU 8</button>
+		</div>
+		<hr class="konu-line">
+		<div class="konu">
+			<button type="button" class="konu-9" id="konu9button">KONU 9</button>
+		</div>
+		<hr class="konu-line">
+		<div class="konu">
+			<button type="button" class="konu-10" id="konu10button">KONU 10</button>
+		</div>
+	</div>
+
+  <!-- Toolbar Sekmesi -->
+	<div class="toolbar-div animate__animated animate__fadeIn">
+		<svg class="toolbar">
+			<rect id="toolbar" rx="0" ry="0" x="0" y="0" width="1706" height="100">
+				<h1 id="toolbar-1"></h1>
+				<div class="bar-konularnela animate__animated animate__fadeInLeft">
+					<button  type="button" class="bar-konular" id="bar-konular">KATEGORİLER</button>
+				</div>
+				<div class="bar-portfolionela animate__animated animate__fadeInLeft">
+						<button type="button" class="bar-portfolio" id="bar-portfolio">PORTFOLIO</button>
+				</div>
+			</rect>
+		</svg>
+	</div>
+
+</div>
+
+<!-- Digital Clock -->
+<div class="datetime animate__animated animate__fadeIn">
+	  <div class="date">
+	     <span id="dayname">Day</span> /
+	     <span id="month">Month</span> /
+	     <span id="daynum">00</span>
+	   / <span id="year">Year</span>
+	  </div>
+	  <div class="time">
+	     <span id="hour">00</span>:
+	     <span id="minutes">00</span>:
+	     <span id="seconds">00</span>
+	     <span id="period">AM</span>
+	  </div>
+	</div>
+
+<!-- Sosyal Medya İkonları -->
+<div class="medya-icon-div animate__animated animate__fadeInRight">
+	<div class="container">
+		<i class="fa fa-twitter" id="twitter" onclick="location.href='https://twitter.com/CysecHunting';"></i>
+		<i class="fa fa-github" id="github" onclick="location.href='https://github.com/Mr0Wido';"></i>
+		<!-- <i class="fa fa-linkedin	" id="facebook" onclick="location.href='https://twitter.com/CysecHunting';"></i> -->
+		<!-- <i class="fa fa-instagram" id="apple"></i> -->
+	</div>
+</div>
+
+<!-- Music Player -->
+<div class="wrapper animate__animated animate__fadeInRight" id="vues">
+ <div class="player">
+	 <div class="player__top">
+		 <div class="player-cover">
+			 <transition-group :name="transitionName">
+					 <div class="player-cover__item" v-if="$index === currentTrackIndex" :style="{ backgroundImage: `url(${track.cover})` }"  v-for="(track, $index) in tracks" :key="$index"></div>
+			 </transition-group>
+		 </div>
+		 <div class="player-controls">
+			 <div class="player-controls__item -favorite" :class="{ active : currentTrack.favorited }" @click="favorite">
+				 <svg class="icon">
+					 <use xlink:href="#icon-heart-o"></use>
+				 </svg>
+			 </div>
+			 <a :href="currentTrack.url" target="_blank" class="player-controls__item">
+				 <svg class="icon">
+					 <use xlink:href="#icon-link"></use>
+				 </svg>
+			 </a>
+			 <div class="player-controls__item" @click="prevTrack">
+				 <svg class="icon">
+					 <use xlink:href="#icon-prev"></use>
+				 </svg>
+			 </div>
+			 <div class="player-controls__item" @click="nextTrack">
+				 <svg class="icon">
+					 <use xlink:href="#icon-next"></use>
+				 </svg>
+			 </div>
+			 <div class="player-controls__item -xl js-play" @click="play">
+				 <svg class="icon">
+					 <use xlink:href="#icon-pause" v-if="isTimerPlaying"></use>
+					 <use xlink:href="#icon-play" v-else></use>
+				 </svg>
+			 </div>
+		 </div>
+	 </div>
+	 <div class="progress" ref="progress">
+		 <div class="progress__top">
+			 <div class="album-info" v-if="currentTrack">
+				 <div class="album-info__name">{{ currentTrack.artist }}</div>
+				 <div class="album-info__track">{{ currentTrack.name }}</div>
+			 </div>
+			 <div class="progress__duration">{{ duration }}</div>
+		 </div>
+		 <div class="progress__bar" @click="clickProgress">
+			 <div class="progress__current" :style="{ width : barWidth }"></div>
+		 </div>
+		 <div class="progress__time">{{ currentTime }}</div>
+	 </div>
+	 <div v-cloak></div>
+ </div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" hidden xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+	 <symbol id="icon-infinity" viewBox="0 0 32 32">
+		 <title>icon-infinity</title>
+		 <path d="M29.312 20.832c-1.28 1.28-3.008 1.984-4.832 1.984s-3.52-0.704-4.832-1.984c-0.032-0.032-0.224-0.224-0.256-0.256v0 1.28c0 0.448-0.352 0.8-0.8 0.8s-0.8-0.352-0.8-0.8v-3.168c0-0.448 0.352-0.8 0.8-0.8h3.168c0.448 0 0.8 0.352 0.8 0.8s-0.352 0.8-0.8 0.8h-1.28c0.032 0.032 0.224 0.224 0.256 0.256 0.992 0.992 2.304 1.536 3.68 1.536 1.408 0 2.72-0.544 3.68-1.536 0.992-0.992 1.536-2.304 1.536-3.68s-0.544-2.72-1.536-3.68c-0.992-0.992-2.304-1.536-3.68-1.536-1.408 0-2.72 0.544-3.68 1.536l-8.416 8.448c-1.312 1.312-3.072 1.984-4.832 1.984s-3.488-0.672-4.832-1.984c-2.656-2.656-2.656-6.976 0-9.632s6.976-2.656 9.632 0c0.032 0.032 0.16 0.16 0.192 0.192l0.064 0.064v-1.28c0-0.448 0.352-0.8 0.8-0.8s0.8 0.352 0.8 0.8v3.168c0 0.448-0.352 0.8-0.8 0.8h-3.168c-0.448 0-0.8-0.352-0.8-0.8s0.352-0.8 0.8-0.8h1.28l-0.096-0.064c-0.032-0.032-0.16-0.16-0.192-0.192-0.992-0.992-2.304-1.536-3.68-1.536s-2.72 0.544-3.68 1.536c-2.048 2.048-2.048 5.344 0 7.392 0.992 0.992 2.304 1.536 3.68 1.536s2.72-0.544 3.68-1.536l8.512-8.512c1.28-1.28 3.008-1.984 4.832-1.984s3.52 0.704 4.832 1.984c2.624 2.656 2.624 7.008-0.032 9.664z"></path>
+		 <path d="M24.512 23.488c-1.6 0-3.136-0.512-4.416-1.44-0.128 0.704-0.736 1.248-1.44 1.248-0.8 0-1.472-0.672-1.472-1.472v-3.168c0-0.8 0.672-1.472 1.472-1.472h3.168c0.8 0 1.472 0.672 1.472 1.472 0 0.608-0.384 1.152-0.928 1.376 0.64 0.352 1.376 0.544 2.144 0.544 1.216 0 2.368-0.48 3.2-1.344 0.864-0.864 1.344-1.984 1.344-3.2s-0.48-2.368-1.344-3.2c-0.864-0.864-1.984-1.344-3.2-1.344s-2.368 0.48-3.2 1.344l-8.512 8.48c-1.408 1.408-3.296 2.176-5.312 2.176s-3.872-0.768-5.312-2.176c-2.912-2.912-2.912-7.68 0-10.592 1.408-1.408 3.296-2.176 5.312-2.176 0 0 0 0 0 0 1.6 0 3.136 0.512 4.416 1.44 0.128-0.704 0.736-1.248 1.472-1.248 0.8 0 1.472 0.672 1.472 1.472v3.168c0 0.8-0.672 1.472-1.472 1.472h-3.168c-0.8 0-1.472-0.672-1.472-1.472 0-0.608 0.384-1.152 0.928-1.376-0.64-0.352-1.376-0.544-2.144-0.544-1.216 0-2.368 0.48-3.2 1.344-1.76 1.76-1.76 4.64 0 6.432 0.864 0.864 2.016 1.344 3.2 1.344 1.216 0 2.368-0.48 3.2-1.344l8.48-8.544c1.408-1.408 3.296-2.208 5.312-2.208s3.872 0.768 5.312 2.208c1.408 1.408 2.176 3.296 2.176 5.312s-0.768 3.872-2.208 5.312v0c0 0 0 0 0 0-1.408 1.408-3.296 2.176-5.28 2.176zM18.752 18.912l1.44 1.44c1.152 1.152 2.688 1.792 4.32 1.792s3.168-0.64 4.32-1.792v0c1.152-1.152 1.792-2.688 1.792-4.32s-0.64-3.168-1.792-4.32c-1.152-1.152-2.688-1.792-4.352-1.792-1.632 0-3.168 0.64-4.32 1.792l-8.48 8.448c-1.12 1.12-2.592 1.728-4.16 1.728s-3.072-0.608-4.16-1.728c-2.304-2.304-2.304-6.048 0-8.352 1.12-1.12 2.592-1.728 4.16-1.728s3.072 0.608 4.16 1.728l1.44 1.408h-2.912c-0.064 0-0.128 0.064-0.128 0.128s0.064 0.128 0.128 0.128h3.168c0.064 0 0.128-0.064 0.128-0.128v-3.168c0-0.064-0.064-0.128-0.128-0.128s-0.128 0.064-0.128 0.128v2.912l-1.408-1.408c-1.152-1.152-2.688-1.792-4.352-1.792-1.632 0-3.168 0.64-4.32 1.792-2.4 2.4-2.4 6.272 0 8.672 1.152 1.152 2.688 1.792 4.32 1.792s3.168-0.64 4.32-1.792l8.512-8.512c1.12-1.12 2.592-1.728 4.16-1.728s3.072 0.608 4.16 1.728c1.12 1.12 1.728 2.592 1.728 4.16s-0.608 3.072-1.728 4.16c-1.12 1.12-2.592 1.728-4.16 1.728s-3.072-0.608-4.16-1.728l-1.408-1.408h2.912c0.064 0 0.128-0.064 0.128-0.128s-0.064-0.128-0.128-0.128h-3.168c-0.064 0-0.128 0.064-0.128 0.128v3.168c0 0.064 0.064 0.128 0.128 0.128s0.128-0.064 0.128-0.128v-2.88z"></path>
+	 </symbol>
+	 <symbol id="icon-pause" viewBox="0 0 32 32">
+		 <title>icon-pause</title>
+		 <path d="M16 0.32c-8.64 0-15.68 7.040-15.68 15.68s7.040 15.68 15.68 15.68 15.68-7.040 15.68-15.68-7.040-15.68-15.68-15.68zM16 29.216c-7.296 0-13.216-5.92-13.216-13.216s5.92-13.216 13.216-13.216 13.216 5.92 13.216 13.216-5.92 13.216-13.216 13.216z"></path>
+		 <path d="M16 32c-8.832 0-16-7.168-16-16s7.168-16 16-16 16 7.168 16 16-7.168 16-16 16zM16 0.672c-8.448 0-15.328 6.88-15.328 15.328s6.88 15.328 15.328 15.328c8.448 0 15.328-6.88 15.328-15.328s-6.88-15.328-15.328-15.328zM16 29.568c-7.488 0-13.568-6.080-13.568-13.568s6.080-13.568 13.568-13.568c7.488 0 13.568 6.080 13.568 13.568s-6.080 13.568-13.568 13.568zM16 3.104c-7.104 0-12.896 5.792-12.896 12.896s5.792 12.896 12.896 12.896c7.104 0 12.896-5.792 12.896-12.896s-5.792-12.896-12.896-12.896z"></path>
+		 <path d="M12.16 22.336v0c-0.896 0-1.6-0.704-1.6-1.6v-9.472c0-0.896 0.704-1.6 1.6-1.6v0c0.896 0 1.6 0.704 1.6 1.6v9.504c0 0.864-0.704 1.568-1.6 1.568z"></path>
+		 <path d="M19.84 22.336v0c-0.896 0-1.6-0.704-1.6-1.6v-9.472c0-0.896 0.704-1.6 1.6-1.6v0c0.896 0 1.6 0.704 1.6 1.6v9.504c0 0.864-0.704 1.568-1.6 1.568z"></path>
+	 </symbol>
+	 <symbol id="icon-play" viewBox="0 0 32 32">
+		 <title>icon-play</title>
+		 <path d="M21.216 15.168l-7.616-5.088c-0.672-0.416-1.504 0.032-1.504 0.832v10.176c0 0.8 0.896 1.248 1.504 0.832l7.616-5.088c0.576-0.416 0.576-1.248 0-1.664z"></path>
+		 <path d="M13.056 22.4c-0.224 0-0.416-0.064-0.608-0.16-0.448-0.224-0.704-0.672-0.704-1.152v-10.176c0-0.48 0.256-0.928 0.672-1.152s0.928-0.224 1.344 0.064l7.616 5.088c0.384 0.256 0.608 0.672 0.608 1.088s-0.224 0.864-0.608 1.088l-7.616 5.088c-0.192 0.16-0.448 0.224-0.704 0.224zM13.056 10.272c-0.096 0-0.224 0.032-0.32 0.064-0.224 0.128-0.352 0.32-0.352 0.576v10.176c0 0.256 0.128 0.48 0.352 0.576 0.224 0.128 0.448 0.096 0.64-0.032l7.616-5.088c0.192-0.128 0.288-0.32 0.288-0.544s-0.096-0.416-0.288-0.544l-7.584-5.088c-0.096-0.064-0.224-0.096-0.352-0.096z"></path>
+		 <path d="M16 0.32c-8.64 0-15.68 7.040-15.68 15.68s7.040 15.68 15.68 15.68 15.68-7.040 15.68-15.68-7.040-15.68-15.68-15.68zM16 29.216c-7.296 0-13.216-5.92-13.216-13.216s5.92-13.216 13.216-13.216 13.216 5.92 13.216 13.216-5.92 13.216-13.216 13.216z"></path>
+		 <path d="M16 32c-8.832 0-16-7.168-16-16s7.168-16 16-16 16 7.168 16 16-7.168 16-16 16zM16 0.672c-8.448 0-15.328 6.88-15.328 15.328s6.88 15.328 15.328 15.328c8.448 0 15.328-6.88 15.328-15.328s-6.88-15.328-15.328-15.328zM16 29.568c-7.488 0-13.568-6.080-13.568-13.568s6.080-13.568 13.568-13.568c7.488 0 13.568 6.080 13.568 13.568s-6.080 13.568-13.568 13.568zM16 3.104c-7.104 0-12.896 5.792-12.896 12.896s5.792 12.896 12.896 12.896c7.104 0 12.896-5.792 12.896-12.896s-5.792-12.896-12.896-12.896z"></path>
+	 </symbol>
+	 <symbol id="icon-next" viewBox="0 0 32 32">
+		 <title>next</title>
+		 <path d="M2.304 18.304h14.688l-4.608 4.576c-0.864 0.864-0.864 2.336 0 3.232 0.864 0.864 2.336 0.864 3.232 0l8.448-8.48c0.864-0.864 0.864-2.336 0-3.232l-8.448-8.448c-0.448-0.448-1.056-0.672-1.632-0.672s-1.184 0.224-1.632 0.672c-0.864 0.864-0.864 2.336 0 3.232l4.64 4.576h-14.688c-1.248 0-2.304 0.992-2.304 2.272s1.024 2.272 2.304 2.272z"></path>
+		 <path d="M29.696 26.752c1.248 0 2.304-1.024 2.304-2.304v-16.928c0-1.248-1.024-2.304-2.304-2.304s-2.304 1.024-2.304 2.304v16.928c0.064 1.28 1.056 2.304 2.304 2.304z"></path>
+	 </symbol>
+	 <symbol id="icon-prev" viewBox="0 0 32 32">
+		 <title>prev</title>
+		 <path d="M29.696 13.696h-14.688l4.576-4.576c0.864-0.864 0.864-2.336 0-3.232-0.864-0.864-2.336-0.864-3.232 0l-8.448 8.48c-0.864 0.864-0.864 2.336 0 3.232l8.448 8.448c0.448 0.448 1.056 0.672 1.632 0.672s1.184-0.224 1.632-0.672c0.864-0.864 0.864-2.336 0-3.232l-4.608-4.576h14.688c1.248 0 2.304-1.024 2.304-2.304s-1.024-2.24-2.304-2.24z"></path>
+		 <path d="M2.304 5.248c-1.248 0-2.304 1.024-2.304 2.304v16.928c0 1.248 1.024 2.304 2.304 2.304s2.304-1.024 2.304-2.304v-16.928c-0.064-1.28-1.056-2.304-2.304-2.304z"></path>
+	 </symbol>
+ </defs>
+</svg>
+
+<!-- Profile -->
+<div class="profile animate__animated animate__fadeInRightBig">
+	<img src="../logo/Profile-4.png" alt="Profile" id="resim">
+</div>
+<div class="profile-yazi animate__animated animate__fadeInRightBig">
+			<h1 id="name">Furkan Deniz</h1>
+			<h1 id="nickname">MR. Wido</h1>
+</div>
+<div class="button-div-1 animate__animated animate__fadeInRightBig">
+	<button type="button" class="button-1" id="portfolio">Portfolio</button>
+</div>
+
+<!-- Loader -->
+<div class="loadermq animate__animated animate__fadeOut">
+	<svg class="circleFW" viewbox="0 0 1000 1000">
+		<circle class="path" cx="500" cy="500" fill="none" r="355" stroke="#29B6F6"/>
+	</svg>
+	<svg class="circleSW" style="animation-duration: 1.4s" viewbox="0 0 1000 1000">
+		<circle class="path2" cx="500"
+		cy="500" fill="none" r="355" stroke="#18FFFF"/>
+	</svg>
+	<svg class="circleFW" viewbox="0 0 1000 1000">
+		<circle class="path3" cx="500" cy="500" fill="none" r="355" stroke="#18FFFF"/>
+	</svg>
+	<svg class="circleFW" viewbox="0 0 1000 1000">
+		<circle class="path4" cx="500" cy="500" fill="none" r="255" stroke="#FFF"/>
+	</svg>
+	<svg class="circleFW" viewbox="0 0 1000 1000">
+		<circle class="path5" cx="500" cy="500" fill="none" r="420" stroke="#18FFFF"/>
+	</svg>
+	<svg class="circleFW" viewbox="0 0 1000 1000">
+		<circle class="path6" cx="500" cy="500" fill="none" r="420" stroke="#18FFFF"/>
+	</svg>
+	<svg class="circleSW" viewbox="0 0 1000 1000">
+		<circle class="path7" cx="500" cy="500" fill="none" r="420" stroke="#18FFFF"/>
+	</svg>
+	<svg class="circleSW" style="animation-timing-function: ease-in-out" viewbox="0 0 1000 1000">
+		<circle class="path8" cx="500" cy="500" fill="none" r="420" stroke="#18FFFF"/>
+		<svg class="circleFW" viewbox="0 0 1000 1000">
+		</svg>
+		<circle class="path9" cx="500" cy="500" fill="none" r="225" stroke="#18FFFF"/>
+	</svg>
+</div>
+
+
+<!-- <audio controls id="music" autoplay preload="auto">
+	<source src="../music/music-1.mp3" type="audio/mpeg">
+	<source src="../music/music-1.ogg" type="audio/ogg">
+	<source src="../music/music-2.mp3" type="audio/mpeg">"
+	<source src="../music/music-2.ogg" type="audio/ogg">
+	<source src="../music/music-4.mp3" type="audio/mpeg">
+	<source src="../music/music-4.ogg" type="audio/ogg">
+	<source src="../music/music-5.mp3" type="audio/mpeg">
+	<source src="../music/music-5.ogg" type="audio/ogg">
+	<source src="../music/music-6.mp3" type="audio/mpeg">"
+	<source src="../music/music-6.ogg" type="audio/ogg">
+	<source src="../music/music-7.mp3" type="audio/mpeg">
+	<source src="../music/music-7.ogg" type="audio/ogg">
+	<source src="../music/music-8.mp3" type="audio/mpeg">
+	<source src="../music/music-8.ogg" type="audio/ogg">
+	<source src="../music/music-10.mp3" type="audio/mpeg">
+	<source src="../music/music-10.ogg" type="audio/ogg">
+	<source src="../music/music-11.mp3" type="audio/mpeg">
+	<source src="../music/music-11.ogg" type="audio/ogg">
+	<source src="../music/music-13.mp3" type="audio/mpeg">
+	<source src="../music/music-13.ogg" type="audio/ogg">
+	<source src="../music/music-14.mp3" type="audio/mpeg">
+	<source src="../music/music-14.ogg" type="audio/ogg">
+	<source src="../music/music-15.mp3" type="audio/mpeg">
+	<source src="../music/music-15.ogg" type="audio/ogg">
+	<source src="../music/music-16.mp3" type="audio/mpeg">
+	<source src="../music/music-16.ogg" type="audio/ogg">
+	<source src="../music/music-17.mp3" type="audio/mpeg">
+	<source src="../music/music-17.ogg" type="audio/ogg">
+	<source src="../music/music-18.mp3" type="audio/mpeg">
+	<source src="../music/music-18.ogg" type="audio/ogg">
+	<source src="../music/music-19.mp3" type="audio/mpeg">
+	<source src="../music/music-19.ogg" type="audio/ogg">
+	<source src="../music/music-20.mp3" type="audio/mpeg">
+	<source src="../music/music-20.ogg" type="audio/ogg">
+	<source src="../music/music-22.mp3" type="audio/mpeg">
+	<source src="../music/music-22.ogg" type="audio/ogg">
+	<source src="../music/music-23.mp3" type="audio/mpeg">
+	<source src="../music/music-23.ogg" type="audio/ogg">
+	<source src="../music/music-24.mp3" type="audio/mpeg">
+	<source src="../music/music-24.ogg" type="audio/ogg">
+	<source src="../music/music-26.mp3" type="audio/mpeg">
+	<source src="../music/music-26.ogg" type="audio/ogg">
+	<source src="../music/music-28.mp3" type="audio/mpeg">
+	<source src="../music/music-28.ogg" type="audio/ogg">
+	<source src="../music/music-30.mp3" type="audio/mpeg">
+	<source src="../music/music-30.ogg" type="audio/ogg">
+	<source src="../music/music-31.mp3" type="audio/mpeg">
+	<source src="../music/music-31.ogg" type="audio/ogg">
+	<source src="../music/music-32.mp3" type="audio/mpeg">
+	<source src="../music/music-32.ogg" type="audio/ogg">
+	<source src="../music/music-33.mp3" type="audio/mpeg">
+	<source src="../music/music-33.ogg" type="audio/ogg">
+	<source src="../music/music-34.mp3" type="audio/mpeg">
+	<source src="../music/music-34.ogg" type="audio/ogg">
+	<source src="../music/music-35.mp3" type="audio/mpeg">
+	<source src="../music/music-35.ogg" type="audio/ogg">
+	<source src="../music/music-36.mp3" type="audio/mpeg">
+	<source src="../music/music-36.ogg" type="audio/ogg">
+	<source src="../music/music-37.mp3" type="audio/mpeg">
+	<source src="../music/music-37.ogg" type="audio/ogg"></audio> -->
+<!-- Note Box -->
+<!-- <form style="max-width:500px;"><textarea class="cyberpunk"></textarea> -->
+<!-- Toolbar Gun -->
+<!--
+	<div class="gun-div animate__animated animate__fadeIn">
+		<div class="gun">
+			<h1 id="textGun">̿=ε/̵͇̿̿/’̿̿ ̿ ̿ ̿ ̿ ̿  </h1>
+		</div>
+	</div>
+-->
+<!-- Başlık 2
+	<div id="yaz" class="yaz-div animate__animated animate__fadeIn">
+		<div id="wrapper">
+			<h1 class="glitch" data-text="CYSEC">CYSEC</h1>
+		</div>
+	</div>
+-->
+
+
+<!-- Javascript Kütüphanesi -->
+  <script src="https://kit.fontawesome.com/5870460a56.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+	<script src="../js/Deneme-1.js"></script>
+	<script src="../js/wow.js"></script>
+	<script>
+		new WOW( {
+			boxClass:     'wow',      // default
+		})
+		wow.init();
+	</script>
+
+
+</body>
+</html>

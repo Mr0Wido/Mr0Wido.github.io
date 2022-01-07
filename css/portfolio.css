@@ -1,0 +1,142 @@
+#Web_1920__1 {
+	position: absolute;
+	width: 1920px;
+	height: 947px;
+	overflow: hidden;
+	--web-view-name: Web 1920 – 1;
+	--web-view-id: Web_1920__1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+
+body {
+  background-color: transparent;
+}
+
+/* Ana Bilgi CSS */
+.ana-bilgi-div {
+	animation-delay: 20s;
+}
+#ana-bilgi {
+	fill: rgba(255,0,0,0.071);
+}
+.ana-bilgi {
+	position: absolute;
+	overflow: visible;
+	width: 880px;
+	height: 712px;
+	left: 520px;
+	top: 168px;
+}
+#ana-bilgi-1 {
+	border: 1px solid #fff;
+	position: absolute;
+	margin: 27px;
+	width: 880px;
+	height: 712px;
+	margin-left: 520px;
+	top: 145px;
+	animation: pulsate 2s infinite alternate;
+	box-shadow:	0 0 4px	  #fff,
+							0 0 4px 	#fff,
+							0 0 15px	#F90716,
+							0 0 7px  #F90716,
+							0 0 17px  #F90716,
+							inset 0 0 10px  #F90716;
+}
+
+/*Ana Bilginin Yazısı Css */
+.ana-yazi {
+	text-align: center;
+	position: absolute;
+	margin: 27px;
+	width: 850px;
+	height: 782px;
+	margin-left: 530px;
+	top: 150px;
+	margin-top: 50px;
+}
+.typeText1 {
+	animation-delay: 26s;
+	color: #42f5fb;
+	font-size: 16px;
+	line-height: 15px;
+	text-shadow: 0 0 15px #0ae4f4;
+}
+.typeText1 {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+@keyframes typeText1 {
+    0%,
+    100% {
+      text-shadow:
+            0 0 2px        #1041FF,
+            0 0 10px       #1041FF,
+            0 0 30px       #1041FF,
+            0 0 30px       #1041FF,
+            0 0 1px        #8BFDFE,
+            2px 2px 1px    #147280;
+            color:         #28D7FE;
+    }
+    50% {
+      text-shadow:
+            0 0 1px        #082180,
+            0 0 3px        #082180,
+            0 0 15px       #082180,
+            0 0 15px       #082180,
+            0 0 1px        #082180,
+            2px 2px 1px    #0A3940;
+            color:         #146C80;
+    }
+}
+
+/*Ana Bilginin Devam Butonu*/
+.button {
+  position: absolute;
+	margin-left: 1220px;
+	margin-top: 825px;
+  padding: 10px 30px;
+  color: #f3e521;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 12px;
+	font-weight: 700;
+  overflow: hidden;
+	background: #f3e521;
+	box-shadow: 0 0 10px #f3e521,
+							0 0 20px #f3e521,
+							0 0 40px #f3e521;
+}
+.button {
+  color: #ec21f3;
+}
+.button-anim {
+	animation-delay: 20s;
+}
+
+/*Ana Bilginin Geri Butonu*/
+.button-geri {
+  position: absolute;
+	margin-left: 545px;
+	margin-top: 825px;
+  padding: 10px 30px;
+  color: #f3e521;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 12px;
+	font-weight: 700;
+  overflow: hidden;
+	background: #f3e521;
+	box-shadow: 0 0 10px #f3e521,
+							0 0 20px #f3e521,
+							0 0 40px #f3e521;
+}
+.button-geri {
+  color: #ec21f3;
+}
+.button-anim-geri {
+	animation-delay: 20s;
+}
