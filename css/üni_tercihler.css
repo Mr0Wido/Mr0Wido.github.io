@@ -1,0 +1,72 @@
+.arkaplan {
+  background-color: #202124;
+}
+.topnav {
+  background-color: #202124;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-left: 20%;
+  border-bottom: 1px solid #fff;
+}
+.topnav a {
+  font-size: 1vw;
+  cursor: pointer;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1.4% 1.6%;
+  text-decoration: none;
+  }
+
+#a1:hover {
+  	background-color: yellow;
+    color: red;
+  }
+
+
+.diger_bolumler {
+  width: 80%
+}
+.yabancidilli_bolumler {
+  width: 80%
+}
+.istanbul_oncelikli_bolumler {
+  width: 80%
+}
+.sevdigim_bolum {
+  width: 80%
+}
+.my_point {
+  width:50%;
+  margin-top: 50px;
+}
+#ismim {
+  padding-top: 5%;
+}
+table {
+  width: 80%;
+  margin-top: 3%;
+  margin-left: 100px;
+}
+table, th, td {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  padding: 10px;
+}
+th,td {
+  color: #fff;
+}
+
+.üni:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: red;
+}
+
+h3 {
+  color: #fff;
+  padding-left: 100px;
+  padding-top: 120px;
+}
